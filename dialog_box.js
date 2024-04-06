@@ -12,3 +12,5 @@ if(Age) {
 //these are alert prompt and confirm
 //alert function return undefined value ,prompt is used to take user input
 //confirm return bool value
+
+
