@@ -1,6 +1,6 @@
 // array are ordered collection of data items
 // if we have not declared data type and size of array means array can have
-// items with mulitple data type as well as they are resizeable
+// items with multiple data type as well as they are resizable
 
 let arr=[3,14,9 ,12 ,5,"string",true];
 console.log(arr);
