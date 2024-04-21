@@ -1,6 +1,6 @@
 // JavaScript typechecking does not take place that means if we pass string 
-// to the function which need number then thereis no checking
-// This feature is avaible in TypeScript
+// to the function which need number then there is no checking
+// This feature is available in TypeScript
 
 
 function HandleObject(course)
