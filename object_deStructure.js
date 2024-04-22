@@ -1,18 +1,22 @@
 const course={
   name:"JS Tutorial",
   price:1999,
-  Instructor:"Chai Aur JS"
+  Teacher:"Hitesh"
 }
 
 console.log(course.Instructor);
 
 // Instead of writing this syntax multiple time we can use another short syntax 
-const {Instructor}=course   //  const {konsi value lene hai} =values kaha se lena hai
-const {Instructor:ASinst}=course   //  const {konsi value lene hai} =values kaha se lena hai
+const {Teacher}=course   //  const {konsi value lene hai} =values kaha se lena hai
+const {Teacher:ASinst}=course   //  const {konsi value lene hai} =values kaha se lena hai
 
 
-console.log(Instructor);
+console.log(Teacher);
 console.log(ASinst);
+
+const {name,price,Instructor}=course;
+console.log(name,price,Teacher);
+//object de-structuring are done through curly braces {}
 
 
 
