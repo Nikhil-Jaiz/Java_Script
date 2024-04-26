@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display:flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div> <img src="/img/1.jpeg" alt="" srcset="" id="1st"></div>
+        <div> <img src="/img/2.jpeg" alt="" srcset="" id="2nd"  "></div>
+        <div> <img src="/img/3.jpeg" alt="" srcset=""></div>
+        <div> <img src="/img/4.jpeg" alt="" srcset=""></div>
+    </div>
+</body>
+<script>
+    document.getElementById("2nd").onclick=function (){
+      alert("This a Image");
+    }
+    document.getElementById("1st").addEventListener("click",function()
+    {
+        alert("This is the first image");
+    },false);
+    //most of the we will use event listener because Event listener has more properties
+</script>
+</html>

@@ -32,3 +32,5 @@ coding.forEach((item)=>
 
 
 //Important note is that forEach is Array method.
+
+// The forEach() method calls a function for each element in an array.

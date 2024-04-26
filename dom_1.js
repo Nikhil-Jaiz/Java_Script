@@ -3,3 +3,10 @@
 //we can draw the DOM tree
 //document.getElementByID("unique")
 //Dom manipulation document.getElementByID("unique").innerHtml
+//Dom manipulation document.getElementByID("unique").innerText
+//Dom manipulation document.getElementByID("unique").innerContent
+//document.getElementByClassName("heading");
+
+
+
+
