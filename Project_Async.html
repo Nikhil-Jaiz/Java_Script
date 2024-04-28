@@ -1,0 +1,53 @@
+<!-- // here we will build a Project using the concept of SetTimeOut and SetInterval
+//Our task is that as soon as we click the start button the background color should change regularly 
+//and that color should stop on pressing the stop button -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body>
+    <button id="start">Start Now</button>
+    <button id="stop">Stop Now</button>
+</body>
+<script>
+   const RandomColor=function()
+{
+    let color='#';
+    const hex="0123456789ABCDEF";
+
+    for(let i=0;i<6;i++)
+    {
+        //generating a random index between 0 to15
+        let ranIndex=Math.floor(Math.random()*15);
+        color+=hex[ranIndex];
+    }
+    return color;
+};
+let IntervalID
+    const startChangingColor  =function()
+    {
+      const  changebgColor=function()
+        {
+            document.body.style.backgroundColor=RandomColor();
+        }
+         IntervalID= setInterval(changebgColor,1000);
+    
+
+    }
+   const stopChangingColor=function()
+    {
+        //very important check
+        if (IntervalID) {
+            clearInterval(IntervalID);
+            IntervalID=null;  //for cleaner code
+        }
+    }
+    document.querySelector("#start").addEventListener("click",startChangingColor);
+    document.querySelector("#stop").addEventListener("click",stopChangingColor);
+</script>
+</html>

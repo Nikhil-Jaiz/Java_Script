@@ -1,11 +1,14 @@
-const num=[1,2,3,4,5];
-// let currVal=0;
-let new_num=num.reduce(function(x,y)
+const RandomColor=function()
 {
-    return x+y;
-})
-console.log(new_num);
+    let color='#';
+    const hex="0123456789ABCDEF";
 
-
-let new_num2=num.reduce((x,y)=>x-y);
-console.log(new_num2);
+    for(let i=0;i<6;i++)
+    {
+        //generating a random index between 0 to15
+        let ranIndex=Math.floor(Math.random()*15);
+        color+=hex[ranIndex];
+    }
+    return color;
+};
+console.log(RandomColor);

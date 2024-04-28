@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut_ClearTimeOut and SetInterval_ClearInterval</title>
+</head>
+
+<body>
+  Hello
+       
+    
+</body>
+<script>
+    let counter =0;
+
+
+  const In=  setInterval(()=>
+{
+    console.log("Value of Counter is",counter);
+    counter ++;
+},1);
+
+setTimeout(function()
+{
+    console.log("Interval Stopped");
+    clearInterval(In);
+},500);
+</script>
+</html>
