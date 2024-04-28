@@ -46,12 +46,12 @@
 // for (let index in arr3) console.log(`Index of array is ${index } and value is${arr3[index]}`);
 
 
-const obj={
-    salary:100000,
-    emp_id:200,
-    email:"xyz@getMaxListeners.com"
+// const obj={
+//     salary:100000,
+//     emp_id:200,
+//     email:"xyz@getMaxListeners.com"
 
-}
+// }
 // for (key in obj)
 // {
 //     console.log(`The key is ${key} and value is ${obj[key]}`);
@@ -69,3 +69,7 @@ const obj={
 // {
 //     console.log(`The value at index ${index} is ${element}`);
 // })
+
+// let arr=[1,2,3,4,5];
+// console.log(arr);
+// console.log(...arr);  ///... is spread operator

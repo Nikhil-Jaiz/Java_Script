@@ -13,3 +13,8 @@ const hundered= Number(100000);
 console.log(hundered.toLocaleString());
 
 console.log(hundered.toString().length);
+
+
+const floating =124.3476464;
+console.log(floating);
+console.log(floating.toFixed(3));
