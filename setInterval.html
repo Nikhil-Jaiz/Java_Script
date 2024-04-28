@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval ASYNC JS</title>
+</head>
+<body>
+    <h1>Chai AUR CODE</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeText=()=>
+    {
+        document.querySelector("h1").innerHTML="Chai AUR Nikhil";
+    }
+   const changeMe= setInterval(changeText,500);
+   
+    document.querySelector("#stop").addEventListener("click",function()
+{
+    clearInterval(changeMe);
+    console.log("SToppde");
+});
+
+</script>
+</html>
