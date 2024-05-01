@@ -10,12 +10,20 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+
+   
+
+// setInterval(function ()
+// Method-1 Less code readibilty
+// {
+//     document.querySelector("h1").innerHTML="Chai AUR Nikhil";
+// },500);
+// method -2   //prefered method
     const changeText=()=>
     {
         document.querySelector("h1").innerHTML="Chai AUR Nikhil";
     }
    const changeMe= setInterval(changeText,500);
-   
     document.querySelector("#stop").addEventListener("click",function()
 {
     clearInterval(changeMe);

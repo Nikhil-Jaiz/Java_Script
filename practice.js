@@ -73,3 +73,15 @@
 // let arr=[1,2,3,4,5];
 // console.log(arr);
 // console.log(...arr);  ///... is spread operator
+
+
+//map filter reduce practice
+//map filter reduce return value but forEACH does not return a value
+
+
+let nums=[2,3,5,7,11,13];
+let new_nums=nums.map((item)=>
+{
+    return item *10;
+}).map((x)=>(x/5)).filter((x)=> (x>10));
+console.log(new_nums);

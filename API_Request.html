@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Hello Ji!Learning Advanced JS</h1>
+    <h2>States of XMLHttpRequest</h2>
+    <pre>
+        0	UNSENT	Client has been created. open() not called yet.
+        1	OPENED	open() has been called.
+        2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+        3	LOADING	Downloading; responseText holds partial data.
+        4	DONE	The operation is complete.
+    </pre>
+    </body>
+  
+ 
+<script>
+    // XMLHttpRequest is a class and we make object of this class 
+    const URL = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr=new XMLHttpRequest();
+  xhr.open("GET",URL);
+  xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)    //converting string to JSON
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+   //whenever we get response from server it is generally in the  form of script
+  //get method is used to get the resources from URL
+  xhr.send();
+</script>
+</html>

@@ -1,0 +1,19 @@
+API stands for Application Programming Interface and it refers to a set of rule and protocols 
+that allow different software applications to interact with each other.
+Types of API
+1-Web API
+2-Browser API
+3-Third Party API
+4-Server Side API
+5-Custom ApIs 
+APIs are based on
+1-JSON
+2-XML
+3-REST
+4-Custom
+5-server Side API
+
+
+
+AJAX-Asynchronous JavaScript and XML
+JSX-JAVA SCRIPT AND XML(writing HTML inside JS)
