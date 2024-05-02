@@ -22,6 +22,9 @@
     // XMLHttpRequest is a class and we make object of this class 
     const URL = 'https://api.github.com/users/hiteshchoudhary';
     const xhr=new XMLHttpRequest();
+
+    //we have created an object xhr of class XmlHttpRequest (Refer concept of CLass & Dynamic Memory C++)
+    //JS does not have concept of pointer
   xhr.open("GET",URL);
   xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
