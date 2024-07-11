@@ -1,0 +1,51 @@
+<html>
+    <head>
+     <title>
+        Closure and Lexical Scopping in JS
+     </title>
+    </head>
+    <body style="background-color: aquamarine;">
+        
+        <button id="orange">Orange</button>
+        <br>
+        <br>
+        <button id="green">Green</button>
+
+        <script>
+      //Concept of Lexical Scoping 
+      //Inner function can access  variable of outer function but 
+      //outer function cannot access variables of inner function
+
+
+        function outer()
+        {
+            let username="Nikhil";
+            // console.log(secret);
+
+            function inner1()
+            {
+                let secret="learning code"
+                console.log(username);
+            }
+            function inner2()
+            {
+                console.log(username);
+                console.log(secret);
+                //similarly in concept of lexical scoping
+                //no two inner function can have access of each other variables
+            }
+            inner1();
+            inner2();
+        }
+        outer();
+            document.getElementById("orange").onclick=function()
+            {
+                document.body.style.backgroundColor="orange"
+            }
+            document.getElementById("green").onclick=function()
+            {
+                document.body.style.backgroundColor="green"
+            }
+        </script>
+    </body>
+</html>
