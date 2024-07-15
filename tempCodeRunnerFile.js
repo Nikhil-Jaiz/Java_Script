@@ -1,18 +1,13 @@
-async function getdata()
+let promise2=new Promise((resolve,reject)=>{
+   setTimeout(function()
 {
-    return new Promise ((resolve,reject)=>
-    {
-        setTimeout(()=>{
-            resolve(455);
-        },2000);
-    })
-}
-async function main()
+    console.log("Performing Async Task2");
+},2000);
+resolve();
+})
+
+//consuming promise without using resolve
+promise2.then(()=>
 {
-    console.log("Loading Modules");
-    console.log("Do something else");
-    console.log("Loading Data");
-    let dt=await getdata();   //await is valid only in async functions
-    console.log("Processing Data");
-}
-main();
+    console.log("Async 2 will not be completed if not called resolve");
+})

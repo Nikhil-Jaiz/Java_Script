@@ -25,3 +25,19 @@ Promise1.then(function()
 })
 
 //Imp Note is that .then is related with resolve  so first we have to call resolve function
+
+//agar promise resolve hoga tabhi ham .then likhnge otherwise cheeze catch me jayegi
+
+let promise2=new Promise((resolve,reject)=>{
+   setTimeout(function()
+{
+    console.log("Performing Async Task2");
+},2000);
+resolve();
+})
+
+//consuming promise without using resolve
+promise2.then(()=>
+{
+    console.log("Async 2 will not be completed if not called resolve");
+})
